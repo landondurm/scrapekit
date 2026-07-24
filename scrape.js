@@ -69,7 +69,7 @@ async function main() {
   if (!pageUrls) {
     console.log('[discover] No sitemap — falling back to link crawling');
     const crawlPage = await context.newPage();
-    pageUrls = await crawlLinks(crawlPage, siteUrl, opts.maxDepth);
+    pageUrls = await crawlLinks(crawlPage, siteUrl, opts.maxDepth, opts.idleTimeout);
     await crawlPage.close();
   }
 
