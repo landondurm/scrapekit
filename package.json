@@ -1,0 +1,16 @@
+{
+  "name": "scrapekit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Mirror a website into a folder of static files for pixel-accurate local viewing",
+  "main": "scrape.js",
+  "scripts": {
+    "scrape": "node scrape.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fast-xml-parser": "^4.5.0",
+    "p-limit": "^6.1.0",
+    "playwright": "^1.49.0"
+  }
+}
